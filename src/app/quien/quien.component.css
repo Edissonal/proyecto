@@ -1,0 +1,83 @@
+
+.redes{
+    margin: 10px 10px;
+    font-size: 30px;
+    padding: 15px 15px;
+    color: #d86d25;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+     
+}
+
+.redes:hover{
+color: #d86d25;
+border: 1px solid #333;
+transition: .5s;
+
+}
+
+.centra{
+    text-align: center;
+    
+}
+.row{
+   padding-bottom: 5%;
+   
+ 
+}
+.row h4   {
+
+    color:#fff;
+}
+
+
+.full-width h2   {
+
+    color:#fff;
+    margin-top: 5%;
+}
+
+.fondo{
+    background-image: url('../../assets/img/negocios.jpg');
+    
+    flex-direction: column;
+    background-size:cover;
+    
+}
+.fondo1{
+    
+    background-color: rgba(0,22, 40, .6);
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    overflow: hidden;
+    
+    
+}
+.text-justify{
+    padding-left:3%;
+    padding-right: 3%;
+    color:#fff;
+}
+
+.list-inline-item a {
+    color:#fff;
+    line-height: 26px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    transition: .5s;
+     
+}
+
+.list-inline-item a:hover{
+color: #d86d25;
+line-height: 26px;
+font-size: 18px;
+font-family: "Poppins", sans-serif;
+transition: .5s;
+     
+
+}

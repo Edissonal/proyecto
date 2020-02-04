@@ -1,0 +1,99 @@
+
+
+<section class="fondop">
+  <div class="fondop1">
+    <h2 class="text-center">CONTACTENOS</h2><br>
+    <ul class="list-inline centra">
+        <li class="list-inline-item"><a class="text-xs-center" href="#"><i class="fa fa-home"></i></a> </li>
+        <li class="list-inline-item"><a class="text-xs-center" href="#"> ></a></li>
+        <li class="list-inline-item"><a class="text-xs-center" href="#">Consultoria</a></li>
+     </ul>
+    </div>
+  </section> 
+  
+  <section class="full-width formated-section">
+    <div class="container"> 
+    
+       
+        
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg centra">
+            <h1 class="">Estar en Contacto</h1>
+            <hr> 
+            <i class="fa fa-users redes"></i>
+   <p>
+    No dudes en contactarme día y noche. Respondo todos los correos electrónicos dentro del límite de tiempo no más de dos días hábiles. Si su negocio es muy urgente, no dude en ponerse en contacto conmigo por Skype.</p>
+    <h3>comercial@tecsoni.com.co</h3>    
+  </div>
+  
+    
+    </div>
+    </section>
+     <section class="full-width formated-section fondop2">
+       <div class="fondo1">
+      <div class="container">
+    <h3 class="centra">Contactanos</h3>
+        <form [formGroup]="contactoForm" (ngSubmit)="onSubmit()" action="envio.php" method="POST">
+        
+          <div class="form-group">
+            <label for="cif">Nombre:</label>
+            <i class="fa fa-check-circle check" 
+            *ngIf="contactoForm.controls.nombre.valid"></i>
+
+       <i class="fa fa-exclamation-circle uncheck"
+            *ngIf="contactoForm.controls.nombre.invalid && contactoForm.controls.nombre.touched"></i>
+            <input type="text" 
+                    id="nombre"  
+                    class="form-control"
+                    formControlName="nombre"
+                    
+                    >
+                    <p class="alert alert-danger" *ngIf="contactoForm.controls.nombre.invalid && contactoForm.controls.nombre.touched">
+                        El campo nombre es obligatorio.
+                      </p>
+            </div>
+          
+              <div class="form-group" >
+                <label for="cif">Correo electronico:</label>
+                <i class="fa fa-check-circle check" 
+                *ngIf="contactoForm.controls.correo.valid"></i>
+    
+           <i class="fa fa-exclamation-circle uncheck"
+                *ngIf="contactoForm.controls.correo.invalid && contactoForm.controls.correo.touched"></i>
+                <input type="text" 
+                        id="correo"  
+                        class="form-control"
+                        formControlName="correo">
+                        <p class="alert alert-danger" *ngIf="contactoForm.controls.correo.invalid && contactoForm.controls.correo.touched">
+                            El campo correo es obligatorio.
+                          </p>
+                </div>
+          
+            <div class="form-group shadow-textarea">
+              <label for="Comentarios">Mensaje:</label>
+              <textarea 
+              class="form-control" rows="8"
+              id="mensaje"
+              formControlName="mensaje"></textarea>
+            </div>
+            <div class="form-group centra">
+            <button type="submit" 
+              class="boton2"
+              [disabled]="!contactoForm.value"
+              ><strong>
+              ENVIAR</strong></button>&nbsp;&nbsp;&nbsp;
+          <p class="alert alert-danger" *ngIf="!contactoForm.valid">
+            Por favor commplete todos los campos
+          </p>
+         <button type="submit" 
+            class="boton1"
+            >
+            <strong>REINICIAR</strong></button> 
+              </div>      
+        </form>
+
+      
+    </div>
+    </div>
+      
+     </section>
+

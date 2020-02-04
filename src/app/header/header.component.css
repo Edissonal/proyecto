@@ -1,0 +1,39 @@
+
+.navbar{
+    background: #055d6b !important;
+}
+
+.dropdown{
+    border-radius:0;
+    border:0;
+}
+
+.dropdown-menu{
+    background: #055d6b;
+    border:0;
+    top:80%;
+    border-radius:0px 0px 5px 5px;
+}
+.dropdown-item:hover{
+    background:#046c7d;
+    color:#fff;
+}
+.dropdown-menu a{
+    color:#fff;
+} 
+
+.navbar .nav-item .nav-link{
+    color:#eee !important; 
+}
+
+.navbar-brand{
+    color:#fff;
+}
+/*
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link{
+    color:red !important;
+    
+}*/
+.logo{
+    color:#fff;
+}

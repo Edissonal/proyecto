@@ -1,0 +1,37 @@
+
+.redes{
+    margin: 10px 10px;
+    font-size: 30px;
+    padding: 9px 9px;
+    color: #FFF;
+    border: 1px solid #077182;
+    border-radius: 50%;   
+    transition: .5s;
+    background: #077182;
+}
+.redes:hover{
+    color:  #FFF;;
+    border: 1px solid #333;
+    transition: .5s;
+    background: #333;
+    
+    }
+
+    .foter{
+    
+        background-color: #055d6b;
+    }
+
+    .foter h5{
+        color:#fff;
+       
+    }
+    
+    .lista{
+        color:#fff;
+       
+    }
+    .row{
+      
+     margin-left: 0px;
+    }
